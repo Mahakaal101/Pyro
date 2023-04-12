@@ -20,6 +20,6 @@ START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/ae8701b26c6cf0d
 
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5791145987').split()]
 
-PORT = os.environ.get('PORT', '80')
+PORT = os.environ.get('PORT', '8080')
 
 WEBHOOK = bool(os.environ.get("WEBHOOK", True))
